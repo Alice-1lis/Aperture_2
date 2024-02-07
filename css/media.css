@@ -1,0 +1,265 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+/*
+@media screen and (max-width: 320px){
+.himalayas p{
+    padding-left: 40px;
+}
+.bunner{
+    margin-top: 148px;
+    display: none;
+}
+.need_help p{
+    font-size: 18px;
+    margin: auto;
+}
+.need_help h4{
+    font-size: 20px;
+    margin-right: 25%;
+    font-size: 8px;
+}
+.need_help_conteiner{
+    width: 320px;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+}
+.get_in_touch {
+    align-content: center;
+    margin: auto;
+}
+.footer_f .button{
+    width: 83px;
+    height: 45px;
+}
+}
+
+
+
+
+@media screen and (max-width: 360px){
+.need_help_conteiner{
+    width: 360px;
+    margin: auto;
+    text-align: center;
+} 
+.need_help h4{
+    font-size: 10px;
+}
+.past_clients h2{
+    font-size: 14px;
+}
+.footer_f .button{
+    width: 80px;
+    height: 30px;
+            
+}
+.footer_f img{
+    padding-left: 10px;
+}
+.footer_f a{
+    font-size: 10px;
+}
+.footer_f p{
+    font-size: 12px;
+}
+.inform{
+    font-size: 10px;
+}
+.button:hover{
+    background-color: gray;
+}  
+.button::before{
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color:  #000000;
+    margin-right: 6px;
+    margin-top: 5px;
+    margin-left: 50px;
+    display: inline-flex;
+    align-items: center;
+            }
+.tools p{
+    font-size: 12px;
+
+}
+.tools h2{
+    font-size: 14px; 
+}
+.tools h4{
+    font-size: 13px;
+    
+}
+.tools .position_bg{
+    width: 30%;
+}
+.need_help h4{
+    font-size: 30px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 428px){
+.what_we_do article{  
+    margin: auto;
+}
+.what_we_do li{
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 768px){
+.container.d_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+      padding: 24px 0;
+      background: #181818;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      position: fixed;
+      z-index: 2;
+}
+.bunner{
+    height: calc(85vh - 83px);
+    padding-right: 5px;
+    padding-left: 5px;
+}
+header .item{
+    font-size: 11px;
+}
+.pastbox_clients_icon{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.btn_a{
+    font-size: 12px;
+    
+    
+}
+.fixed_location li{
+    position: relative;
+    top:  50px;
+    text-align: center;
+
+}
+.bunner .fixed_location li{
+    top: 2px;
+    
+}
+.what_we_do h3{
+    padding-top: 50px;
+}
+
+.footer_f .button{
+    width: 80px;
+    height: 30px;
+            
+}
+
+.button:hover{
+    background-color: gray;
+}  
+.button::before{
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color:  #000000;
+    margin-right: 6px;
+    margin-top: 5px;
+    margin-left: 50px;
+    display: inline-flex;
+    align-items: center;
+ }  
+ 
+}
+
+@media screen and (max-width: 800px){
+.btn_a{
+        padding: 10px;
+}
+.bunner_p{
+        padding-bottom: 5px;
+}
+}
+
+@media screen and (max-width: 800px){
+.faq p{
+    font-weight: 3px;
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 10px;
+ } 
+ .faq h3{
+    margin-left: 10px;
+ }
+ .tools p{
+    font-size: 11px;
+    text-align: left;
+    width: 200px;
+}
+.tools h2{
+    font-size: 18px;
+}
+.tools .item{
+    align-content: center;
+    
+}
+
+}
+
+@media screen and (max-width: 850px){
+   .item {
+    margin-right: 7px;
+    font-size: 14px;
+    flex-direction: column;
+}
+
+.tools p{
+    font-size: 12px;
+flex-wrap: wrap;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 980px){
+.tools p{
+    font-size: 14px;
+    text-align: center;
+    width: 200px;
+}
+.tools h2{
+    font-size: 18px;
+    text-align: center;
+}
+.tools .item{
+    
+    text-align: center;
+}
+.navbar .item{
+    display: none;
+}
+}

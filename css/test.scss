@@ -22,6 +22,7 @@ header{
     position: absolute;
     width: 100%;
     top: 0;
+    box-sizing: border-box;
     position: fixed;
     z-index: 2;
     @include max-screen(768px){
@@ -96,9 +97,8 @@ header nav ul li{
     left: 80%;
     top: 100px;
     border: 1px solid black;
-    
     &:hover{
-        background-color: rgb(75, 95, 48);
+        background-color: gray;
     
     }
     @include max-screen(652px){
@@ -126,7 +126,7 @@ header nav ul li{
 
 
 .bunner{
-    background-image: url('/images/bg.main.jpg');
+    background-image: url('../images/bg.main.jpg');
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -411,7 +411,12 @@ header nav ul li{
         line-height: 20px;
         padding-bottom: 20px;
         max-width: 514px;
-    
+    @include max-screen(768px){
+        font-size: 14px;
+        text-align: center;
+        width: 200px;
+        
+    }
        
         }
     
@@ -594,7 +599,7 @@ header nav ul li{
             padding-top: 113px;
             padding-bottom: 15px;
             @include max-screen(628px){
-            font-size: 18px;
+            font-size: 30px;
             margin: auto;
         }
     }
@@ -620,22 +625,29 @@ header nav ul li{
        
         
 
-    .get_in_touch{
+.get_in_touch {
         display: inline-block;
         width: 154px;
         height: 42px;
         font-family: $main_font;
         border-radius: 14px;
         font-size: 16px;
+        color: #000000;
+        text-align: center;
         background: #FFF;
         text-decoration: none;
         margin: auto;
-        &:before{
+        text-align: center;
+        &:hover{
+            background-color: gray;
+        
+        }
+          &:before{
         content: "";
         display: inline-block;
         width: 32px;
         height: 32px;
-        border-radius: 50%;
+        border-radius: 40%;
         background-color:  #000000;
         margin-right: 6px;
         margin-top: 5px;
@@ -643,28 +655,118 @@ header nav ul li{
         display: inline-flex;
         align-items: center;
         }
-        @include max-screen(320px){
+        .get_in_touch {
+            text-align: center;
+            display: flex;
+            color: #000;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.4px;
         
-       
-        }
-        a{
-        text-align: center;
-        display: flex;
-        color: #000;
-        font-family: $main_font;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0.4px;
-        } 
-        
+            }
+         
+   
 
     }
 
 
 
 
+
+
+    .faq{
+        background-color: #181818;
+        padding: 70px 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+        .text{
+        max-width: 500px;
+        padding-right: 50px;
+        box-sizing: border-box;
+    }
+        h3{
+            font-family: Poppins;
+            color: #C0C0C0;
+            font-family: "Poppins" sans-serif;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        p{
+            color: #C0C0C0;
+            font-family: "Poppins";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+    
+    .accordion{
+        max-width: 700px;
+    }
+    .ui-accordion 
+    .ui-accordion-header {
+        background: #FFFFFF;
+        border: 1px solid #E3E8EF;
+        box-shadow: 0px 1px 2px rgba( 0, 0, 0,05);
+        border-radius: 8px;
+        padding: 23px 25px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #202939;
+        margin-bottom: 16px;}
+     .ui-state-active{
+        margin-bottom: 0px;
+        border-radius: 8px 8px 0 0;}
+    .ui-accordion-content{
+        margin-bottom: 16px;
+        border-radius: 0 0 8px 8px;}
+    .ui-icon{
+        background-image: none;
+        background-position: 0;
+        width: 32px;
+        height: 48px;
+        text-indent: 0px;
+        position: absolute;
+        right: 25px;
+        top: 26px;
+        &:before{
+            font-weight: 900;
+            font-family: "Font Awesome 6 Free";
+            content: "\2b";
+            font-size: 32px;
+            display: inline-block;
+            transition: 0.5s;
+            
+            &:before{
+                transform: rotate(360deg);
+
+}}
+   
+} 
+    
+    } 
+    
+    
+    
+    
+   
+    
 
 
 
@@ -689,7 +791,7 @@ header nav ul li{
 
 .footer_f{
         background: #000;
-        height: 652px;
+        min-height: 752px;
         background-size: cover;
         box-sizing: border-box;
         .string:after{
@@ -701,6 +803,7 @@ header nav ul li{
             height: 2px;
             flex-shrink: 0;
             margin-bottom: 40px;
+            
         }
         .string:after{
             content: "";
@@ -710,7 +813,9 @@ header nav ul li{
             width: 1168px;
             height: 2px;
             flex-shrink: 0;
-            margin-bottom: 40px
+            margin-bottom: 40px;
+            margin-bottom: 40px;
+           
         }
         .container_f{
             max-width: 1168px;
@@ -722,7 +827,10 @@ header nav ul li{
             justify-content: space-between;
             padding-bottom: 36px;
             margin: auto;
-           
+           .logo{
+            @include max-screen(768px){
+            padding-left: 10px;
+           }}
             p{
                 color: #C0C0C0;
                 font-family: Poppins;
@@ -730,12 +838,14 @@ header nav ul li{
                 font-style: normal;
                 font-weight: 400;
                 line-height: 20px;
+                padding-left: 10px;
                 @include max-screen(360px){
                         font-size: 11px;
+                        margin-left:  10px;
                     
                 }
             }
-            a{
+             a{
                 color: #FFF;
                 padding-bottom: 30px;
                 font-family: Poppins;
@@ -744,9 +854,9 @@ header nav ul li{
                 font-weight: 400;
                 line-height: 20px;
                 text-decoration: none;
-                @include max-screen(360px){
-                font-size: 9px;
-                
+                @include max-screen(768px){
+                font-size: 11px;
+                margin-left:  10px;
                 }
                 
                 }
@@ -760,8 +870,10 @@ header nav ul li{
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 padding-bottom: 10px;
+                
                 @include max-screen(360px){
                     font-size: 10px;
+                    margin-left: 10px;
                 
                     
                     
@@ -769,22 +881,32 @@ header nav ul li{
                 }
                 li{
                 padding-bottom: 10px;
+                margin-left: 10px;
                 }
-                
-    }
-            
-
+        }
 .subscribe{
     max-width: 1168px;
     height: 214px;
     background-size: cover;
     margin: auto;
-        .box_subsctite{
+        .box_subscribe{
             display: flex;
             justify-content: space-between;
             padding-bottom: 56px;
             margin: auto;
             } 
+            .inform{
+                color: #C0C0C0;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; 
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding-bottom: 10px;
+                margin-left: 10px;
+            }
             p{
             color: #C0C0C0;
             font-family: Poppins;
@@ -792,22 +914,28 @@ header nav ul li{
             font-style: normal;
             font-weight: 400;
             line-height: 20px;
+            margin-left: 10px;
             }
-            .button{
-            @include max-screen(768px){
-            width: 120px;
-            height: 30px;
-            margin: right;
-            }
-            display: inline-block;
-            width: 458px;
-            height: 52px;
-            flex-shrink: 0;
-            border-radius: 12px;
-            border: 1px solid #E5E7EB;
-            background: #F9FAFB;
-            &::before{
-                content: "";
+         .button{
+                display: inline-block;
+                width: 458px;
+                height: 52px;
+                flex-shrink: 0;
+                border-radius: 12px;
+                border: 1px solid #E5E7EB;
+                background: #F9FAFB;
+                @include max-screen(768px){
+                    width: 120px;
+                    height: 40px;
+                    margin-right: 10px;
+                }
+
+                &:hover{
+                    background-color: gray;
+                
+                }
+                 &::before{
+                    content: "";
                     display: inline-block;
                     width: 63px;
                     height: 30px;
@@ -816,45 +944,72 @@ header nav ul li{
                     margin-top: 11px;
                     margin-left: 389px;
                     margin-right: 6px;
+                    padding-top: 5px;
+                
                     display: inline-flex;
                     align-items: center;
+                    @include max-screen(768px){
+                        content: "";
+                        display: inline-block;
+                        width: 42px;
+                        height: 26px;
+                        border-radius: 13px;
+                        background-color: #000;
+                        margin-top: 4px;
+                        margin-left: 75px;
+                        
+                        display: inline-flex;
+                        align-items: center;
+                 
+
+                       }}
+                      
+                            }}}
                     
-                    }
-                    &:hover{
-                        background-color: gray;
-                    }
-                   
+                
+        
+               
+
+ .link{
+    max-width: 1168px;
+    
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        .inc_soc{
+            display: flex;
             
-
-
-                }
-
-.link{
-                display: flex;
-                justify-content: space-between;
+        }
+        p{
+            color: #C0C0C0;
+            font-family: Poppins;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+        }
+       
+    .soc{
+        display: flex;
+        img{
+            padding-left: 20px;
             }
-            ul li img{
-                padding-left: 20px;
-                }
-                .soc{
-                    display: flex;
-                
                     
-                }
-                .licensing{
-                    color: #C0C0C0;
-                    font-family: Poppins;
-                    font-size: 13px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 20px;
-                    text-decoration: none;
-                
-                }
+            }
+    .licensing{
+        color: #C0C0C0;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-decoration: none;
+        }
             
-}}
 
-                  
+
+                
 
 
 

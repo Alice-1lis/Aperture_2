@@ -30,10 +30,7 @@
     align-content: center;
     margin: auto;
 }
-.footer_f .button{
-    width: 83px;
-    height: 45px;
-}
+
 }
 
 
@@ -71,19 +68,7 @@
 .button:hover{
     background-color: gray;
 }  
-.button::before{
-    content: "";
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background-color:  #000000;
-    margin-right: 6px;
-    margin-top: 5px;
-    margin-left: 50px;
-    display: inline-flex;
-    align-items: center;
-            }
+
 .tools p{
     font-size: 12px;
 
@@ -96,21 +81,12 @@
     
 }
 .tools .position_bg{
-    width: 30%;
+    width: 30%
 }
 .need_help h4{
     font-size: 30px;
 }
 }
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 428px){
 .what_we_do article{  
@@ -169,39 +145,16 @@ header .item{
     padding-top: 50px;
 }
 
-.footer_f .button{
-    width: 80px;
-    height: 30px;
-            
-}
+
 
 .button:hover{
     background-color: gray;
 }  
-.button::before{
-    content: "";
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background-color:  #000000;
-    margin-right: 6px;
-    margin-top: 5px;
-    margin-left: 50px;
-    display: inline-flex;
-    align-items: center;
- }  
+
  
 }
 
-@media screen and (max-width: 800px){
-.btn_a{
-        padding: 10px;
-}
-.bunner_p{
-        padding-bottom: 5px;
-}
-}
+
 
 @media screen and (max-width: 800px){
 .faq p{
@@ -225,7 +178,12 @@ header .item{
     align-content: center;
     
 }
-
+.btn_a{
+    padding: 10px;
+}
+.bunner_p{
+    padding-bottom: 5px;
+}
 }
 
 @media screen and (max-width: 850px){
@@ -238,6 +196,7 @@ header .item{
 .tools p{
     font-size: 12px;
 flex-wrap: wrap;
+
 }
 
 }

@@ -1,10 +1,10 @@
-/**{
+*{
     padding: 0;
     margin: 0;
 }
 
 
-
+/*
 header{
     padding: 24px 0;
     background: #181818;
@@ -71,7 +71,7 @@ header nav ul li{
 
 }
 .bunner{
-    background-image: url('/images/bg.main.jpg');
+    background-image: url('../images/bg.main.jpg');
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -782,7 +782,7 @@ box-sizing: border-box;
     line-height: 20px;
 
 }
-/*
+
 .container_f a{
     color: #FFF;
     padding-bottom: 30px;
@@ -820,7 +820,7 @@ box-sizing: border-box;
     flex-shrink: 0;
     margin-bottom: 40px;
 }
-
+/*
 .subscribe{
     max-width: 1168px;
     height: 214px;
@@ -842,7 +842,7 @@ box-sizing: border-box;
     line-height: 20px;
     
 }
-.box_subsctite .button{
+.box_subscribe .button{
 display: inline-block;
 width: 458px;
 height: 52px;
@@ -852,7 +852,7 @@ border: 1px solid #E5E7EB;
 background: #F9FAFB;
 
 }
-.box_subsctite .button:hover{
+.box_subscribe .button:hover{
     background-color: gray;
 }
 
@@ -880,7 +880,7 @@ background: #F9FAFB;
 
 
 
-.box_subsctite{
+.box_subscribe{
     display: flex;
     justify-content: space-between;
     padding-bottom: 56px;
@@ -921,6 +921,7 @@ background: #F9FAFB;
 
 
 .link{
+    
     display: flex;
     justify-content: space-between;
 }

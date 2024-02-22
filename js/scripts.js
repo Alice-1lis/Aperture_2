@@ -24,13 +24,7 @@ $('.owl-carousel').owlCarousel({
         $( "#accordion" ).accordion();
     } );
 
-
-
-
-
-
-
-	jQuery(document).ready(function($){
+jQuery(document).ready(function($){
 		//toggle 3d navigation
 		$('.cd-3d-nav-trigger').on('click', function(){
 			toggle3dBlock(!$('.cd-header').hasClass('nav-is-visible'));
@@ -58,7 +52,7 @@ $('.owl-carousel').owlCarousel({
 		function updateSelectedNav(type) {
 			var selectedItem = $('.cd-selected'),
 				selectedItemPosition = selectedItem.index() + 1, 
-				leftPosition = selectedItem.offset().left,
+				leftPosition = selectedItem.offset()
 				backgroundColor = selectedItem.data('color');
 	
 			$('.cd-marker').removeClassPrefix('color').addClass('color-'+ selectedItemPosition).css({

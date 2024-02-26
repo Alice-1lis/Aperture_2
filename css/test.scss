@@ -25,9 +25,6 @@ header{
     box-sizing: border-box;
     position: fixed;
     z-index: 2;
-    @include max-screen(768px){
-       
-    }
 }
 
 
@@ -43,22 +40,32 @@ header{
     justify-content: space-between;
     align-items: center;
     @include max-screen(768px){
-        justify-content: space-between;
+        flex-direction: column;
     }
+    
     
 }
 
 .navbar{
     list-style: none;
     display: flex;
-    @include max-screen(320px){
-        flex: wrap;
-    }
+   
 }
 
 header nav ul li{
     margin-left: 56px;
     font-size: 13px;
+    @include max-screen(980px){
+    margin-left: 25px;
+    }
+    .btn_a{
+    @include max-screen(980px){
+       top: 100px;
+       position: fixed;
+       right: 10px;
+       
+    }
+}
 }
 
 .navbar .item{
@@ -69,14 +76,8 @@ header nav ul li{
     font-weight: 400;
     line-height: 20px; 
     text-decoration: none;
-    @include max-screen(768px){
-        font-size: 11px;
-        
-    }
-    @include max-screen(652px){
-        display: none;
-        
-    }
+   
+   
 }
 .btn_a{
     color: #000;
@@ -93,38 +94,29 @@ header nav ul li{
     padding-right: 20px; 
     padding-bottom: 13px;
     padding-left: 20px;
-    position: fixed;
-    left: 80%;
-    top: 100px;
     border: 1px solid black;
+    margin-top: 50px;
+  
     &:hover{
         background-color: gray;
     
     }
-    @include max-screen(652px){
-        font-size: 10px;
-        letter-spacing: 0.1px;
-        border-radius: 12px;
-        line-height: 9px;
-        background: #FFF;
-        width: 40px;
-        height: 11px;
-        left: 70%;
-    }
-    .btn_a{
-        @include max-screen(360px){
-    top: 150px;
-    }
-}
+    @include max-screen(768px){
+    font-size: 10px;
+    letter-spacing: 0.1px;
+    border-radius: 12px;
+    line-height: 9px;
+    background: #FFF;
+    width: 40px;
+    height: 11px;
+    left: 70%;
+    position: fixed;
+    z-index: 2;
 
-}
-
-
-
-
-
-
-
+    }}
+    
+   
+    
 .bunner{
     background-image: url('../images/bg.main.jpg');
     background-size: cover;
@@ -143,15 +135,11 @@ header nav ul li{
    
     }
     
-    
-  
-    .bunner_wrap{
+.bunner_wrap{
         max-width: 580px;
         text-align: center;
         color: #FFFFFF;
         position: relative;
-       
-        
     }
         h2{
             font-family:$main_font; color: #C0C0C0;
@@ -327,6 +315,7 @@ header nav ul li{
         width: 298px;
         margin-right: 62px;
      }
+     
      h4{
         color: #FFF;
         font-family: $main_font;
@@ -364,22 +353,25 @@ header nav ul li{
                 width: 20%;
         }
     }
-    .item{
+   
+    .text{
         max-width: 540px;
-        @include max-screen(800px){
-            max-width: 200px;
-            margin-left: 50px;
-            
-            
+        @include max-screen(768px){
+            max-width: 140px;
+            margin-left: 20px;
         }
-        } 
+       
+    } 
         
     .container{
         display: flex;
         align-items: center;
         min-height: 540px;
         padding-right: 108px;
+        margin: auto;
+       
         }
+      
     h4{
         color: #C0C0C0;
         font-family: $main_font;
@@ -390,6 +382,9 @@ header nav ul li{
         letter-spacing: 2px;
         text-transform: uppercase;
         padding-bottom: 6px;
+        @include max-screen(850px){
+                padding-top: 10px;
+        }
        
         }
     h2{
@@ -401,7 +396,8 @@ header nav ul li{
         line-height: 32px;
         padding-bottom: 14px;
        
-        }
+   
+}
     p{
         color: #FFF;
         font-family: $main_font;
@@ -410,22 +406,11 @@ header nav ul li{
         font-weight: 400;
         line-height: 20px;
         padding-bottom: 20px;
-        max-width: 514px;
-    @include max-screen(768px){
-        font-size: 14px;
-        text-align: center;
-        width: 200px;
-        
-    }
-       
-        }
-    
+        max-width: 400px;
+      
    
+ }           
 }
-
-    
-    
-    
 
 
 .costa_rica{
@@ -475,7 +460,6 @@ header nav ul li{
     display: flex;
     text-align: center;
     width: 100%;
-
     .box{
     max-width: 1168px;
     margin: auto;
@@ -498,15 +482,15 @@ header nav ul li{
         }
         }
     p{
-            color: #C0C0C0;
-            text-align: center;
-            font-family: $main_font;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 30px;
-            margin-bottom: 87px;
-            padding-top: 15px;
+        color: #C0C0C0;
+        text-align: center;
+        font-family: $main_font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 87px;
+        padding-top: 15px;
     }
     .pastbox_clients_icon{
         display: flex;
@@ -623,61 +607,52 @@ header nav ul li{
 
 
        
-        
-
-.get_in_touch {
-        display: inline-block;
-        width: 154px;
-        height: 42px;
-        font-family: $main_font;
-        border-radius: 14px;
-        font-size: 16px;
-        color: #000000;
-        text-align: center;
-        background: #FFF;
-        text-decoration: none;
-        margin: auto;
-        text-align: center;
-        &:hover{
-            background-color: gray;
-        
-        }
-          &:before{
-        content: "";
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        border-radius: 40%;
-        background-color:  #000000;
-        margin-right: 6px;
-        margin-top: 5px;
-        margin-left: 4px;
-        display: inline-flex;
-        align-items: center;
-        }
-        .get_in_touch {
-            text-align: center;
-            display: flex;
-            color: #000;
-            font-family: Poppins;
+.get_in_touch{
+            display: inline-block;
+            width: 154px;
+            height: 42px;
+            font-family: $main_font;
+            border-radius: 14px;
             font-size: 16px;
+            color: #000000;
+            background: #FFF;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
             font-style: normal;
             font-weight: 400;
             line-height: 20px;
-            letter-spacing: 0.4px;
-        
+                &:hover{
+                background-color: gray;
             }
-         
+                &:before{
+            content: "";
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border-radius: 40%;
+            background-color:  #000000;
+            margin-right: 6px;
+            margin-top: 5px;
+            margin-left: 4px;
+            
+            
+
+            }
+           
+            
+            }
+        
+    
+    
    
 
-    }
+    
 
 
 
 
-
-
-    .faq{
+.faq{
         background-color: #181818;
         padding: 70px 0;
     .container{
@@ -700,6 +675,10 @@ header nav ul li{
             letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 40px;
+            @include max-screen(768px){
+                margin-left: 20px;
+                
+            }
         }
         p{
             color: #C0C0C0;
@@ -710,11 +689,20 @@ header nav ul li{
             line-height: 30px;
             text-transform: uppercase;
             letter-spacing: 1px;
+            @include max-screen(768px){
+                margin-left: 20px;
+                
+            }
         }
         
     
-    .accordion{
+
+.accordion{
         max-width: 700px;
+        @include max-screen(768px){
+            max-width: 200px;
+            margin-right: 20px;
+        }
     }
     .ui-accordion 
     .ui-accordion-header {
@@ -730,12 +718,15 @@ header nav ul li{
         line-height: 27px;
         color: #202939;
         margin-bottom: 16px;}
+        
      .ui-state-active{
         margin-bottom: 0px;
         border-radius: 8px 8px 0 0;}
+       
     .ui-accordion-content{
         margin-bottom: 16px;
         border-radius: 0 0 8px 8px;}
+       
     .ui-icon{
         background-image: none;
         background-position: 0;
@@ -752,43 +743,17 @@ header nav ul li{
             font-size: 32px;
             display: inline-block;
             transition: 0.5s;
-            
             &:before{
                 transform: rotate(360deg);
-
+            }
+        }
 }}
-   
-} 
-    
-    } 
     
     
     
     
    
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer_f{
         background: #000;
         min-height: 752px;
@@ -803,8 +768,7 @@ header nav ul li{
             height: 2px;
             flex-shrink: 0;
             margin-bottom: 40px;
-            
-        }
+    }
         .string:after{
             content: "";
             display: block;
@@ -815,7 +779,6 @@ header nav ul li{
             flex-shrink: 0;
             margin-bottom: 40px;
             margin-bottom: 40px;
-           
         }
         .container_f{
             max-width: 1168px;
@@ -830,7 +793,7 @@ header nav ul li{
            .logo{
             @include max-screen(768px){
             padding-left: 10px;
-           }}
+        }}
             p{
                 color: #C0C0C0;
                 font-family: Poppins;
@@ -843,8 +806,8 @@ header nav ul li{
                         font-size: 11px;
                         margin-left:  10px;
                     
-                }
             }
+        }
              a{
                 color: #FFF;
                 padding-bottom: 30px;
@@ -856,10 +819,10 @@ header nav ul li{
                 text-decoration: none;
                 @include max-screen(768px){
                 font-size: 11px;
-                margin-left:  10px;
+                margin-right: 10px;
                 }
                 
-                }
+            }
             .inform{
                 color: #C0C0C0;
                 font-family: Poppins;
@@ -870,15 +833,11 @@ header nav ul li{
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 padding-bottom: 10px;
-                
                 @include max-screen(360px){
                     font-size: 10px;
                     margin-left: 10px;
-                
-                    
-                    
-                    }
                 }
+            }
                 li{
                 padding-bottom: 10px;
                 margin-left: 10px;
@@ -929,11 +888,10 @@ header nav ul li{
                     height: 40px;
                     margin-right: 10px;
                 }
-
                 &:hover{
                     background-color: gray;
-                
-                }
+                   
+            }
                  &::before{
                     content: "";
                     display: inline-block;
@@ -945,7 +903,6 @@ header nav ul li{
                     margin-left: 389px;
                     margin-right: 6px;
                     padding-top: 5px;
-                
                     display: inline-flex;
                     align-items: center;
                     @include max-screen(768px){
@@ -957,20 +914,13 @@ header nav ul li{
                         background-color: #000;
                         margin-top: 4px;
                         margin-left: 75px;
-                        
                         display: inline-flex;
                         align-items: center;
-                 
-
-                       }}
-                      
-                            }}}
+                    }
+                }
+            }}}
                     
-                
-        
-               
-
- .link{
+.link{
     max-width: 1168px;
     
         display: flex;
@@ -992,6 +942,11 @@ header nav ul li{
        
     .soc{
         display: flex;
+        @include max-screen(800px){
+            margin-right: 10px;
+            
+            
+        }
         img{
             padding-left: 20px;
             }

@@ -13,6 +13,7 @@ header {
   position: fixed;
   z-index: 2;
 }
+
 .container {
   max-width: 1148px;
   margin: auto;
@@ -25,7 +26,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .d_flex {
-    justify-content: space-between;
+    flex-direction: column;
   }
 }
 
@@ -33,15 +34,22 @@ header {
   list-style: none;
   display: flex;
 }
-@media screen and (max-width: 320px) {
-  .navbar {
-    flex: wrap;
-  }
-}
 
 header nav ul li {
   margin-left: 56px;
   font-size: 13px;
+}
+@media screen and (max-width: 980px) {
+  header nav ul li {
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 980px) {
+  header nav ul li .btn_a {
+    top: 100px;
+    position: fixed;
+    right: 10px;
+  }
 }
 
 .navbar .item {
@@ -52,16 +60,6 @@ header nav ul li {
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
-}
-@media screen and (max-width: 768px) {
-  .navbar .item {
-    font-size: 11px;
-  }
-}
-@media screen and (max-width: 652px) {
-  .navbar .item {
-    display: none;
-  }
 }
 
 .btn_a {
@@ -79,15 +77,13 @@ header nav ul li {
   padding-right: 20px;
   padding-bottom: 13px;
   padding-left: 20px;
-  position: fixed;
-  left: 80%;
-  top: 100px;
   border: 1px solid black;
+  margin-top: 50px;
 }
 .btn_a:hover {
   background-color: gray;
 }
-@media screen and (max-width: 652px) {
+@media screen and (max-width: 768px) {
   .btn_a {
     font-size: 10px;
     letter-spacing: 0.1px;
@@ -97,11 +93,8 @@ header nav ul li {
     width: 40px;
     height: 11px;
     left: 70%;
-  }
-}
-@media screen and (max-width: 360px) {
-  .btn_a .btn_a {
-    top: 150px;
+    position: fixed;
+    z-index: 2;
   }
 }
 
@@ -327,13 +320,13 @@ header nav ul li {
     width: 20%;
   }
 }
-.tools .item {
+.tools .text {
   max-width: 540px;
 }
-@media screen and (max-width: 800px) {
-  .tools .item {
-    max-width: 200px;
-    margin-left: 50px;
+@media screen and (max-width: 768px) {
+  .tools .text {
+    max-width: 140px;
+    margin-left: 20px;
   }
 }
 .tools .container {
@@ -341,6 +334,7 @@ header nav ul li {
   align-items: center;
   min-height: 540px;
   padding-right: 108px;
+  margin: auto;
 }
 .tools h4 {
   color: #C0C0C0;
@@ -352,6 +346,11 @@ header nav ul li {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding-bottom: 6px;
+}
+@media screen and (max-width: 850px) {
+  .tools h4 {
+    padding-top: 10px;
+  }
 }
 .tools h2 {
   color: #FFF;
@@ -370,14 +369,7 @@ header nav ul li {
   font-weight: 400;
   line-height: 20px;
   padding-bottom: 20px;
-  max-width: 514px;
-}
-@media screen and (max-width: 768px) {
-  .tools p {
-    font-size: 14px;
-    text-align: center;
-    width: 200px;
-  }
+  max-width: 400px;
 }
 
 .costa_rica {
@@ -588,11 +580,13 @@ header nav ul li {
   border-radius: 14px;
   font-size: 16px;
   color: #000000;
-  text-align: center;
   background: #FFF;
   text-decoration: none;
-  margin: auto;
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 .get_in_touch:hover {
   background-color: gray;
@@ -607,19 +601,6 @@ header nav ul li {
   margin-right: 6px;
   margin-top: 5px;
   margin-left: 4px;
-  display: inline-flex;
-  align-items: center;
-}
-.get_in_touch .get_in_touch {
-  text-align: center;
-  display: flex;
-  color: #000;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.4px;
 }
 
 .faq {
@@ -647,6 +628,11 @@ header nav ul li {
   text-transform: uppercase;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 768px) {
+  .faq h3 {
+    margin-left: 20px;
+  }
+}
 .faq p {
   color: #C0C0C0;
   font-family: "Poppins";
@@ -657,8 +643,19 @@ header nav ul li {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 768px) {
+  .faq p {
+    margin-left: 20px;
+  }
+}
 .faq .accordion {
   max-width: 700px;
+}
+@media screen and (max-width: 768px) {
+  .faq .accordion {
+    max-width: 200px;
+    margin-right: 20px;
+  }
 }
 .faq .ui-accordion .ui-accordion-header {
   background: #FFFFFF;
@@ -775,7 +772,7 @@ header nav ul li {
 @media screen and (max-width: 768px) {
   .footer_f .container_f a {
     font-size: 11px;
-    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 .footer_f .container_f .inform {
@@ -900,6 +897,11 @@ header nav ul li {
 
 .soc {
   display: flex;
+}
+@media screen and (max-width: 800px) {
+  .soc {
+    margin-right: 10px;
+  }
 }
 .soc img {
   padding-left: 20px;
